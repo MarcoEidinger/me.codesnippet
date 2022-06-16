@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jsonFileRead</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let path: String = "&lt;# pathToFile #&gt;"
+let readingOptions: JSONSerialization.ReadingOptions = .allowFragments
+let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+let json = try JSONSerialization.jsonObject(with: data, options: readingOptions)
+let jsonDictionary = json as? [String: Any]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>83743DD3-C190-4E4E-AA70-5434AC345299</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Read file contents and serialize the JSON data to a dictionary</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Read from a JSON file at a given path</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

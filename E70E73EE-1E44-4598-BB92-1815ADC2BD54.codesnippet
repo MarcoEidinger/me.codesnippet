@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>openXcode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let task = Process()
+let pipe = Pipe()
+
+task.standardOutput = pipe
+task.standardError = pipe
+task.arguments = ["-c", "open -a Xcode"]
+task.launchPath = "/bin/zsh"
+task.standardInput = nil
+task.launch()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E70E73EE-1E44-4598-BB92-1815ADC2BD54</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Use Process to open Xcode programmatically</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Open Xcode</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

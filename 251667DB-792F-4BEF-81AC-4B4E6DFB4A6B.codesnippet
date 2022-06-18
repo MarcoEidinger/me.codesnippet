@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>bindingUnwrap</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension Binding {
+    func toUnwrapped&lt;T&gt;(defaultValue: T) -&gt; Binding&lt;T&gt; where Value == T? {
+        Binding&lt;T&gt;(get: { self.wrappedValue ?? defaultValue }, set: { self.wrappedValue = $0 })
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>251667DB-792F-4BEF-81AC-4B4E6DFB4A6B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Extension to unwrap an optional SwiftUI binding safely (w. default value)</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SwiftUI.Binding.toUnwrapped</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

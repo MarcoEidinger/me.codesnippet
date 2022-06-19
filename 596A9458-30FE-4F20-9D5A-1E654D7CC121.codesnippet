@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>emailFeedback</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>Button("Send Feedback") {
+    let service = NSSharingService(named: NSSharingService.Name.composeEmail)
+    service?.recipients = ["&lt;# emailAddress #&gt;"]
+    service?.subject = "&lt;# subject #&gt;"
+    service?.perform(withItems: [])
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>596A9458-30FE-4F20-9D5A-1E654D7CC121</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>macosx</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>SwiftUI button to trigger composing an email on macOS</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>"Send Feedback" SwiftUI button</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

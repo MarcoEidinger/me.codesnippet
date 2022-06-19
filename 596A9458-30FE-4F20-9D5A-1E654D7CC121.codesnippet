@@ -24,7 +24,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>SwiftUI button to trigger composing an email on macOS</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>"Send Feedback" SwiftUI button</string>
+	<string>SwiftUI button "Send Feedback"</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

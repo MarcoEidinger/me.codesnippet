@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>qrUIImage</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension UIImage {
+    // CIDetector can maintain many state variables that can impact performance. So for best performance, reuse CIDetector instances instead of creating new ones.
+    static private var sharedCIDetector: CIDetector? {
+        CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
+    }
+    var barcodeMessage: String? {
+        guard let ciImage = CIImage(image: self) else { return nil }
+        guard let ciDetector = UIImage.sharedCIDetector else { return nil }
+        let results = ciDetector.features(in: ciImage)
+        guard let qrCodeFeature = results.first as? CIQRCodeFeature else { return nil }
+        return qrCodeFeature.messageString
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E21CC714-585C-4A94-81A9-FED66A6D87CE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Extension on UIImage to detect a QR code and read its message</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Detect QR barcode in UIImage</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

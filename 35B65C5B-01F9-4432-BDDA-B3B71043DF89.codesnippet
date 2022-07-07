@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let hexString = SHA256.hash(data: Data(&lt;# String Variable #&gt;.utf8)).compactMap { String(format: "%02x", $0) }.joined()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>35B65C5B-01F9-4432-BDDA-B3B71043DF89</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Calculate a SHA256 digest string representation from a given string. Requires to import CryptoKit!</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Calculate the SHA hash of a String </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
